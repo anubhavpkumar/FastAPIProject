@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Test</title>
+    <style>
+        .formContainer{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="formContainer">
+        <h3>Register</h3>
+        <form action="http://localhost:8000/register" method='POST'>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="firstName"><br>
+    
+            <label for="fname">Last name:</label><br>
+            <input type="text" id="fname" name="lastName"><br>
+            
+            <label for="fname">Email Address:</label><br>
+            <input type="text" id="fname" name="emailAddress"><br>
+            
+            <label for="fname">Phone Number:</label><br>
+            <input type="text" id="fname" name="phoneNumber"><br>
+            
+            <label for="fname">password:</label><br>
+            <input type="text" id="fname" name="userpassword"><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <div class="formContainer">
+        <h3>Login</h3>
+        <form action="http://localhost:8000/login" method='POST'>
+            <label for="fname">Email Address:</label><br>
+            <input type="text" id="fname" name="emailAddress"><br>
+            
+            <label for="fname">password:</label><br>
+            <input type="text" id="fname" name="userpassword"><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="formContainer">
+        <h3>Logout</h3>
+        <form action="http://localhost:8000/logout" method='POST'>
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+
+    <div class="formContainer">
+        <h3>Get Current User</h3>
+        <form action="http://localhost:8000/myprofile" method='GET'>
+            <input type="submit" value="Get user">
+        </form>
+    </div>
+    
+</body>
+</html>
